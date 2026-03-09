@@ -32,8 +32,8 @@
 
     frame_color = "#a1b5a188"
     background = "#2a2d2aff"
-	  foreground = "#a1b5a1"
-	  highlight = "#a1b5a1"
+	foreground = "#a1b5a1"
+	highlight = "#a1b5a1"
 
     gap_size = 0
     separator_color = auto
