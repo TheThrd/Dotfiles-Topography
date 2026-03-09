@@ -12,6 +12,6 @@ Ensure you have hyprland installed, this won't be here because I'm lazy but it's
 First you need to download a few dependencies for the installation. These are only the specific ones needed, not the hyprland required ones, install any alongside if they are not replaced by the ones that are required.
 
 (In your terminal)
-''' bash
+``` bash
 sudo pacman -S rofi dunst waybar hyprpaper
-'''
+```
