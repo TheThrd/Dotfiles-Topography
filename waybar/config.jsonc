@@ -1,0 +1,115 @@
+// -*- mode: jsonc -*-
+{
+    "spacing": 0,
+    "margin-left": 5,
+    "margin-top": 5,
+    "margin-right": 5,
+    "modules-left": [
+	    "pulseaudio",
+	    "network",
+	    "mpris"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+	"power-profiles-daemon",
+	"battery",
+        "cpu",
+        "memory",
+        "clock",
+        "tray"
+    ],
+    "mpris": {
+		"player": "spotify",
+		"format": "{player_icon} <b>{title}</b> - {artist}",
+		"format-paused": "{player_icon} <i>{title} - {artist}</i>",
+		"tooltip": false,
+		"player-icons": {
+			"default": "▶",
+			"spotify": " "
+		},
+		"status-icons": {
+			"paused": "   "
+		},
+		"on-click": "playerctl play-pause",
+		"on-scroll-up": "playerctl next",
+		"on-scroll-down": "playerctl previous",
+		"on-click-right": "spotify-launcher"
+    },
+    "hyprland/workspaces": {
+	    "all-outputs": true,
+	    "format": "{name}",
+	    "on-click": "activate"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%m/%Y}"
+    },
+    "cpu": {
+        "format": "{}% "
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "",
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "network": {
+        "format-wifi": "WIFI ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+		"on-click": "kitty -e nmtui"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": " {icon} ",
+        "format-muted": " ",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "kitty -e bluetui",
+		"on-click-right": "pavucontrol"
+    },
+}
