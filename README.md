@@ -18,20 +18,20 @@ sudo pacman -S git rofi dunst waybar hyprpaper
 
 ## Installing and moving files
 Now you need to clone the actual repository:
-``` bash
+```bash
 git clone https://github.com/TheThrd/Dotfiles-Topography.git
 ```
 Using this we can move each file to its respective location
 ### Main config
-``` bash
+```bash
 mv ~/Dotfiles-Topography/hypr ~/.config/hypr
 ```
 ### Dunst (notifications)
-``` bash
+```bash
 mv ~/Dotfiles-Topography/dunst ~/.config/dunst
 ```
 ### Rofi (open apps easily - currently largely unconfigured)
-``` bash
+```bash
 mv ~/Dotfiles-Topography/rofi ~/.config/rofi
 ```
 ### Waybar (status bar)
