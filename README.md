@@ -93,6 +93,9 @@ Rofi may be configured in the future depending on how much I can be bothered.
 For my cursor setup, use [hypr-dynamic-cursors](https://github.com/VirtCode/hypr-dynamic-cursors)
 Note that this is not maintained or created by me, so all instructions should be followed from there.
 
+## Terminal Theme
+I use a kitty terminal theme called Atelier Forest Dark
+
 ## One last thing
 My sddm theme is currently not available as it is extremely janky (I just ripped apart one of the default themes and added my own style to it), I would say use cosmic greeter or some other sddm theme (or even customise your own) for a nicer look.
 I might? make a more permanent replacement, which I will add here maybe
