@@ -38,3 +38,53 @@ mv ~/Dotfiles-Topography/rofi ~/.config/rofi
 ```bash
 mv ~/Dotfiles-Topography/waybar ~/.config/waybar
 ```
+### Extra scripts
+This is required for laptop multimedia keys
+```bash
+mv ~/Dotfile-Topography/scripts ~/.scripts
+```
+
+## Extra - background
+This is for if you want to generate your own background similar to mine, the script works for any colours, you just have to modify it yourself.
+
+This takes a bit of setup to do, but it should be okay.
+
+### Ensure Python/pip is installed
+```bash
+sudo pacman -S python python-pip
+```
+
+### Using the script
+First we create an environment for some pip packages that the script uses
+```bash
+python -m venv .venv
+```
+Then enter the venv
+```bash
+source .venv/bin/activate.fish
+```
+Install the needed packages for the program
+```bash
+pip install numpy perlin-noise pillow
+```
+Now run the python script
+```bash
+python ~/Dotfiles-Topography/background.py
+```
+It will prompt you for some configurations, these are the ones I use for my main monitor:
+width: 1920
+height: 1200
+scale: 150
+steps: 24
+
+Width and height should be your monitor resolution, but I recommend using smaller values at first since the script is very slow. (eg, I used 1920x100 to test values).
+Scale determines how 'zoomed in' the topography is, the larger your dpi is the higher I recommend this.
+Steps determines how many different colour bands there are.
+
+After the script runs, a preview should popup with the result, you can either save it there or type 'y' into the terminal and provide a file name (just the name, the file extension will automatically be .png and may not work if a different one is placed).
+If you do not want the background, just type 'n' or exit the terminal.
+
+After that, the file should be saved in ~/Dotfiles-Topography by default (I haven't tested but I assume so since it uses the cwd)
+
+## Thank you for using my dotfiles!
+The install process might have been difficult and bug-riden, but I will refine based on feedback given.
