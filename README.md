@@ -94,7 +94,7 @@ For my cursor setup, use [hypr-dynamic-cursors](https://github.com/VirtCode/hypr
 Note that this is not maintained or created by me, so all instructions should be followed from there.
 
 ## One last thing
-My sddm theme is currently not available as it is extremely janky (I just ripped apart one of the default themes and added my own style to it), use cosmic greeter or a different sddm theme (or even customise your own).
+My sddm theme is currently not available as it is extremely janky (I just ripped apart one of the default themes and added my own style to it), I would say use cosmic greeter or some other sddm theme (or even customise your own) for a nicer look.
 I might? make a more permanent replacement, which I will add here maybe
 
 ## Thank you for using my dotfiles!
