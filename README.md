@@ -86,5 +86,12 @@ If you do not want the background, just type 'n' or exit the terminal.
 
 After that, the file should be saved in ~/Dotfiles-Topography by default (I haven't tested but I assume so since it uses the cwd)
 
+## Configuring
+I recommend going into all the main configs (especially hyprpaper) to set your own wallpapers, keybinds, etc
+Rofi may be configured in the future depending on how much I can be bothered.
+
+For my cursor setup, use [hypr-dynamic-cursors](https://github.com/VirtCode/hypr-dynamic-cursors)
+Note that this is not maintained or created by me, so all instructions should be followed from there.
+
 ## Thank you for using my dotfiles!
 The install process might have been difficult and bug-riden, but I will refine based on feedback given.
